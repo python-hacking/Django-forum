@@ -7,3 +7,5 @@ forum/db.sqlite3
 .Python
 .project
 .pydevproject
+*.swp
+*.swo

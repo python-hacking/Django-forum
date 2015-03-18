@@ -16,6 +16,16 @@
         </ul>
         {% endfor %}
 
+        <form method="post">
+          {% csrf_token %}
+          <fieldset>
+            <legend>Enter a message:</legend>
+            <textarea id="input_message" class="text" cols="80" rows ="8" name="input_message"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+
         <p>
             This is a forum template.
         </p>
