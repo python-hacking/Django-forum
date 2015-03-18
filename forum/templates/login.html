@@ -1,5 +1,7 @@
+{% extends "common.html" %}
 <html>
 <body>
+{% block content %}
  {% if errors %}
  <p class="error">{{ errors }}</p>
   {% endif %}
@@ -13,5 +15,6 @@
     <input type="submit" value="login" />
   </form>
   or <a href="/register">register</a>.
+{% endblock %}
 </body>
 </html>
